@@ -38,3 +38,4 @@ rsconnect/
 # Working files
 _*.md
 synthese.RData
+.Rproj.user
