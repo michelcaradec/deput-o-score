@@ -10,6 +10,8 @@ Un site de démonstration est disponible à cette adresse : https://mcaradec.shi
 
 L'hébergement est assuré par **[shinyapps.io by RStudio](https://www.shinyapps.io/)**, avec un [plan de consommation](https://www.shinyapps.io/#_pricing) gratuit. Le site peut donc être provisoirement indisponible si tous les crédits sont consommés.
 
+Pour plus d'informations, veuillez vous reporter à la [foire aux questions](project/assets/faq.md).
+
 ## Outils & Technologies
 
 - [R](https://cran.r-project.org/).
