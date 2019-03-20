@@ -4,11 +4,23 @@ Le **Déput-O-Score** a pour objectif de donner un aperçu rapide de l'activité
 
 ![graphique](assets/graph.png)
 
+## Utilisation
+
+1. Lancer [RStudio](https://www.rstudio.com/).
+2. Ouvrir le projet `deput-o-score.Rproj`.
+3. Exécuter le script R `launch.R` avec la commande suivante :
+
+```R
+source("launch.R")
+```
+
+4. Le site apparaît dans le navigateur internet.
+
 ## Démonstration
 
 Un site de démonstration est disponible à cette adresse : https://mcaradec.shinyapps.io/Deput-O-Score/.
 
-L'hébergement est assuré par **[shinyapps.io by RStudio](https://www.shinyapps.io/)**, avec un [plan de consommation](https://www.shinyapps.io/#_pricing) gratuit. Le site peut donc être provisoirement indisponible si tous les crédits sont consommés.
+L'hébergement est assuré par **[shinyapps.io by RStudio](https://www.shinyapps.io/)**, avec un [plan de consommation](https://www.shinyapps.io/#_pricing) gratuit. Le site peut donc être provisoirement indisponible si tous les crédits mensuels sont consommés.
 
 Pour plus d'informations, veuillez vous reporter à la [foire aux questions](project/assets/faq.md).
 

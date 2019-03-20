@@ -61,9 +61,9 @@ Les mesures étant toutes transposées sur une échelle de **0 à 100**, le scor
 
 L'émoticône affiché varie en fonction de la position du score par rapport aux [quartiles](https://fr.wikipedia.org/wiki/Quartile).
 
-| Description | Emoticône |
-|---|---|
-| 25% les plus faibles. | &nbsp;<i class="far fa-frown fa-2x"></i> |
-| 50% les plus faibles. | &nbsp;<i class="far fa-meh fa-2x"></i> |
-| 50% les plus forts. | &nbsp;<i class="far fa-smile fa-2x"></i> |
-| 25% les plus forts. | &nbsp;<i class="far fa-grin fa-2x"></i> |
+| Description | Emoticône | Emoticône ASCII |
+|---|---|---|
+| 25% les plus faibles. | &nbsp;<i class="far fa-frown fa-2x"></i> | `:-(` |
+| 50% les plus faibles. | &nbsp;<i class="far fa-meh fa-2x"></i> | `:-|` |
+| 50% les plus forts. | &nbsp;<i class="far fa-smile fa-2x"></i> | `:-)` |
+| 25% les plus forts. | &nbsp;<i class="far fa-grin fa-2x"></i> | `:-D` |
