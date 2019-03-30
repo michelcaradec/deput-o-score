@@ -1,8 +1,8 @@
 ### Foire aux questions
 
-#### A quoi correspondent les métriques
+#### A quoi correspondent les mesures
 
-| Métrique | Colonne | Description |
+| Mesure | Colonne | Description |
 |---|---|---|
 | Semaines d'activité | `semaines presence` | Nombre de semaines où le député a été relevé présent en commission, a pris la parole (même brièvement) dans l'hémicycle ou a participé physiquement à un scrutin public. |
 | Présences en Commission | `commission presences` | Nombre de réunions de commission où le député a été relevé présent. |
@@ -51,7 +51,19 @@ Chaque segment est complété avec un montant indiquant sa valeur absolue (exemp
 
 Le score est la moyenne des mesures.
 
-Toutes les mesures sont prises en compte, à l'exception du nombre d'amendements adoptés.
+Toutes les mesures sont prises en compte, à l'exception :
+
+- Du nombre d'**amendements adoptés**.
+
+> La non-signature d'un amendement ne signifie pas que son auteur a démérité, le rapport de force entre les groupes parlementaires ayant souvent un impact sur l'acceptation ou pas dudit amendement.
+
+- Du nombre d'**interventions courtes en Hémicycle**.
+  
+> Un·e député·e ayant présidé des débats verra son nombre augmenter de façon significative, avec des interventions de type "La parole est à ...", "Poursuivez ..." ou "Veuillez conclure...".
+> 
+> Un autre exemple est celui d'un·e député·e manifestant sont accord (ou désaccord) en réponse à une intervention avec des propos comme "Bravo", "Exactement" ou "C'est scandaleux".
+> 
+> Dans tous les cas, on peut considérer que ces interventions (composées de 20 mots maximum) ne sont pas le reflet d'une réflexion ayant fait l'objet d'un travail préparatoire, comme c'est plus probablement le cas pour une intervention longue.
 
 Les mesures étant toutes transposées sur une échelle de **0 à 100**, le score maximum est de **100**.
 
@@ -63,7 +75,7 @@ L'émoticône affiché varie en fonction de la position du score par rapport aux
 
 | Description | Emoticône | Emoticône ASCII |
 |---|---|---|
-| 25% les plus faibles. | &nbsp;<i class="far fa-frown fa-2x"></i> | `:-(` |
-| 50% les plus faibles. | &nbsp;<i class="far fa-meh fa-2x"></i> | `:-|` |
-| 50% les plus forts. | &nbsp;<i class="far fa-smile fa-2x"></i> | `:-)` |
-| 25% les plus forts. | &nbsp;<i class="far fa-grin fa-2x"></i> | `:-D` |
+| 25% les plus faibles. | &nbsp;<span style="color: red"><i class="far fa-frown fa-2x"></i></span> | `:-(` |
+| 50% les plus faibles. | &nbsp;<span style="color: red"><i class="far fa-meh fa-2x"></i></span> | `:-|` |
+| 50% les plus forts. | &nbsp;<span style="color: green"><i class="far fa-smile fa-2x"></i></span> | `:-)` |
+| 25% les plus forts. | &nbsp;<span style="color: green"><i class="far fa-grin fa-2x"></i></span> | `:-D` |

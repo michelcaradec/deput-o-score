@@ -75,8 +75,9 @@ get_score_plot <- function(id) {
       ))
     )
 
-  # FIXME: filtre sur le nom pas fiable en cas d'homonymie.
-  depute_absolute <- get_synthese_absolute() %>% filter(nom == depute$nom) %>%
+  # FIXME: Le filtre sur le nom n'est pas fiable en cas d'homonymie.
+  depute_absolute <- get_synthese_absolute() %>%
+    filter(nom == depute$nom) %>%
     select(metric_cols) %>%
     gather("indicator", "value")
 
