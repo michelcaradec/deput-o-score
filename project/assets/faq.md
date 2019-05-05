@@ -74,8 +74,22 @@ Les mesures étant toutes transposées sur une échelle de **0 à 100**, le scor
 L'émoticône affiché varie en fonction de la position du score par rapport aux [quartiles](https://fr.wikipedia.org/wiki/Quartile).
 
 | Description | Emoticône | Emoticône ASCII |
-|---|---|---|
+|---|:-:|:-:|
 | 25% les plus faibles. | &nbsp;<span style="color: red"><i class="far fa-frown fa-2x"></i></span> | `:-(` |
 | 50% les plus faibles. | &nbsp;<span style="color: red"><i class="far fa-meh fa-2x"></i></span> | `:-|` |
 | 50% les plus forts. | &nbsp;<span style="color: green"><i class="far fa-smile fa-2x"></i></span> | `:-)` |
 | 25% les plus forts. | &nbsp;<span style="color: green"><i class="far fa-grin fa-2x"></i></span> | `:-D` |
+
+#### Comment naviguer sur un·e député·e
+
+L'argument `depute` ajouté à l'URL permet d'indiquer le·la député·e à sélectionner.
+
+Exemple :
+
+```raw
+https://mcaradec.shinyapps.io/Deput-O-Score/?depute=666
+```
+
+Le numéro permettant d'identifier un·e député·e est celui de sa place dans l'hémicycle. Un·e député·e est sélectionné·e au hasard si le numéro est invalide.
+
+Toute modification de la sélection dans la liste déroulante est répercutée au niveau l'URL, qui peut ainsi être copiée et diffusée.

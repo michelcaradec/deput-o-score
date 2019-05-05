@@ -79,7 +79,7 @@ shinyUI(fluidPage(
         span("Créé par "),
         a("Michel Caradec", href = "https://fr.linkedin.com/in/michel-caradec-36997650"),
         span(". Le projet est disponible sur "),
-        a("Github", href = "https://github.com/michelcaradec/"),
+        a("Github", href = "https://github.com/michelcaradec/deput-o-score/"),
         span(".")
       ),
       p(

@@ -28,3 +28,5 @@ synthese_scale <- 100
 set_at_scale <- function(x, scale = synthese_scale) {
   x / max(x) * scale
 }
+
+querystring_depute <- "depute"

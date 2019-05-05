@@ -124,6 +124,8 @@ get_score_plot <- function(id) {
 }
 
 shinyServer(function(input, output, session) {
+  enableBookmarking(store = "url")
+  
   observe({
     print(paste0(date(), " - check_datasource() started"))
     check_datasource()
@@ -134,12 +136,26 @@ shinyServer(function(input, output, session) {
   })
   
   observe({
+    query <- getQueryString()
+    id <- 0
+    if (!is.null(query[[querystring_depute]])) {
+      # www.site.com/?depute=${PLACE_EN_HEMICYCLE}
+      id <- as.integer(query[[querystring_depute]])
+    }
+    if (is.na(id) ||
+        is.null(id) ||
+        !(id %in% get_synthese()$place_en_hemicycle)) {
+      # Sélection aléatoire d'un député à chaque rafraîchissement de page.
+      id <- sample(get_synthese()$place_en_hemicycle, 1)
+    }
+    
+    print(paste0("Sélection du député ", id))
+    
     updateSelectInput(
       session,
       "deputy",
       choices = setNames(get_synthese()$place_en_hemicycle, get_synthese()$nom),
-      # Sélection aléatoire d'un député à chaque rafraîchissement de page.
-      selected = sample(nrow(get_synthese()), 1)
+      selected = id
     )
   })
   
@@ -187,6 +203,10 @@ shinyServer(function(input, output, session) {
   })
 
   output$circularPlot <- renderPlot({
+    print(paste0("Affichage du député ", input$deputy))
+    
+    updateQueryString(paste0("?", querystring_depute, "=", input$deputy))
+
     get_score_plot(input$deputy)
   })
   
