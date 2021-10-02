@@ -105,7 +105,7 @@ get_score_plot <- function(id) {
              fill = alpha("black", 0),
              colour = "black",
              show.legend = F) +
-    # Echelle axe Y avec borne négative pour l'aspet donut.
+    # Echelle axe Y avec borne négative pour l'aspect donut.
     scale_y_continuous(
       breaks = seq(0, synthese_scale, length.out = 3),
       limits = c(-synthese_scale / 5, synthese_scale)) +

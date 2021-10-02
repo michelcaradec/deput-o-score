@@ -2,3 +2,4 @@
 require(shiny) || install.packages("shiny")
 require(shinyjs) || install.packages("shinyjs")
 require(RCurl) || install.packages("RCurl")
+require(markdown) || install.packages("markdown")

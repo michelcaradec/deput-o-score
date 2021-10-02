@@ -20,7 +20,8 @@ dataprep <- function() {
   
   # Data-frame utilisée pour le calcul du score et la dataviz.
   synthese <- synthese %>%
-    select(keep_cols) %>%
+    select(all_of(keep_cols)) %>%
+    mutate_at(kpis$name_source, ~ replace_na(.x, 0)) %>%
     rename_at(kpis$name_source, clean_colname)
   
   # Data-frame utilisée pour l'affichage des vrais valeurs.

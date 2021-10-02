@@ -1,5 +1,6 @@
 library(shiny)
 library(shinyjs)
+library(markdown)
 
 shinyUI(fluidPage(
   # Awesome Fonts ----

@@ -26,7 +26,7 @@ get_filename_date <- function(filename) {
 synthese_scale <- 100
 
 set_at_scale <- function(x, scale = synthese_scale) {
-  x / max(x) * scale
+  coalesce(x / max(x) * scale, 0)
 }
 
 querystring_depute <- "depute"
