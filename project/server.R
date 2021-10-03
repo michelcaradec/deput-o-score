@@ -90,7 +90,7 @@ get_score_plot <- function(id) {
     # Député (légende)
     scale_fill_manual(
       values = colours_rank,
-      labels = c(" < médiane", " > médiane", " = médiane")
+      labels = c(" > médiane", " = médiane", " < médiane")
     ) +
     # Député (valeurs absolues)
     geom_text(aes(x = str_replace_all(indicator, " ", "\n"), y = 50, label = prettyNum(value, big.mark = " ")),
